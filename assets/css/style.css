@@ -476,6 +476,7 @@ header .navbar ul li a:hover {
 
   header .navbar {
     width: 85%;
+    z-index: 3;
   }
 
   .home .content h2 {
