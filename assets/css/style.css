@@ -281,7 +281,7 @@ header .navbar ul li a:hover {
 /* social icons start */
 .socials {
   position: relative;
-  margin-top: 9rem;
+  margin-top: 5rem;
 }
 .socials .social-icons {
   padding-left: 0;
@@ -341,12 +341,186 @@ header .navbar ul li a:hover {
   left: 0;
 }
 /* social icons end */
+@media (max-width: 1024px) {
+  header {
+    padding: 1.5rem 5%;
+  }
+  section {
+    padding: 2rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 1.2rem 4%;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: 6.5rem;
+    right: -100%;
+    width: 75%;
+    height: 100%;
+    background-color: #0e0f31;
+    text-align: left;
+    transition: right 0.4s ease-in-out;
+  }
+
+  header .navbar.nav-toggle {
+    right: 0;
+  }
+
+  header .navbar ul {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  header .navbar ul li {
+    text-align: center;
+    width: 100%;
+    margin: 1.2rem 0;
+  }
+
+  header .navbar ul li a {
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    display: block;
+    color: #fff;
+  }
+
+  header .navbar ul li a:hover {
+    border-bottom: 0.3rem solid #da0416;
+  }
+
+  #menu {
+    display: block;
+    font-size: 3rem;
+  }
+
+  /* Hero Section */
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .home .content {
+    padding-top: 2rem;
+  }
+
+  .home .content h2 {
+    font-size: 4rem;
+    margin-left: 0;
+  }
+
+  .home .content p {
+    font-size: 1.8rem;
+    margin-left: 0;
+  }
+
+  .home .btn {
+    margin-left: 0;
+    font-size: 1.6rem;
+  }
+
+  .home .image {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .home .image img {
+    width: 75%;
+    height: auto;
+    margin: 3rem auto;
+  }
+
+  /* Social Icons */
+  .socials {
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  .socials .social-icons {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    padding: 1rem 3%;
+  }
+
+  header .logo {
+    font-size: 1.8rem;
+  }
+
+  header .navbar {
+    width: 85%;
+  }
+
+  .home .content h2 {
+    font-size: 3.5rem;
+  }
+
+  .home .content p {
+    font-size: 1.6rem;
+  }
+
+  .home .btn {
+    border: 1px solid red;
+    font-size: 1.5rem;
+    margin-left: 20px;
+
+  }
+
+  .home .image img {
+    width: 85%;
+  }
+  .socials {
+    
+    margin-left: 2rem;
+  }
+  .social-icons{
+    width: 100%;
+    margin-left: 25%;
+   
+  }
+  .social-icons a {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 1.6rem;
+  }
+}
 
 /* hero media queries starts*/
-@media (max-width: 450px) {
+@media (max-width: 430px) {
+  .home{
+    border: 1px solid red;
+    
+  }
   .home .btn {
     margin: 4rem 0;
   }
+  
   .socials {
     margin-top: 12rem;
   }
