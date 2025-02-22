@@ -485,7 +485,7 @@ header .navbar ul li a:hover {
   }
 
   .home .btn {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 1.5rem;
     margin-left: 20px;
 
@@ -513,10 +513,7 @@ header .navbar ul li a:hover {
 
 /* hero media queries starts*/
 @media (max-width: 430px) {
-  .home{
-    border: 1px solid red;
-    
-  }
+  
   .home .btn {
     margin: 4rem 0;
   }
