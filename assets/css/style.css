@@ -357,9 +357,11 @@ header .navbar ul li a:hover {
 
   header {
     padding: 1.2rem 4%;
+    z-index: 1;
   }
 
   header .navbar {
+    z-index: 3;
     position: fixed;
     top: 6.5rem;
     right: -100%;
