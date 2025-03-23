@@ -685,6 +685,7 @@ header .navbar ul li a:hover {
   background: rgba(0, 0, 22, 0.9);
   transition: 0.2s;
 }
+
 .skills .container .bar:hover {
   box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
   background-color: rgba(0, 0, 0, 0.9) !important;
@@ -1419,3 +1420,16 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+.achievements .container{
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(79, 79, 80, 0.9);
+  transition: 0.2s;
+  border: 1px solid red;
+}
+.achievements .imgs{
+  display: flex;
+  gap: 2rem;
+}
