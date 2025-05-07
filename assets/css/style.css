@@ -1421,15 +1421,99 @@ form .button-area {
 }
 /* scroll top ends */
 
-.achievements .container{
-  padding: 10px;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background: rgba(79, 79, 80, 0.9);
-  transition: 0.2s;
-  border: 1px solid red;
+/* Achievements Section */
+.achievements {
+  background: linear-gradient(to bottom, #2F3C7E , #FBEAEB);
+  padding: 60px 20px;
+  text-align: center;
 }
-.achievements .imgs{
+
+.achievements .heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.achievements .heading i {
+  
+  color: #ffae00;
+  margin-right: 10px;
+}
+
+.achievements .heading span {
+  
+  color: #ffae00;
+}
+
+.achievements .container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.achievements .imgs {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.achievements .bar {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 380px;
+  transition: transform 0.3s ease;
+}
+
+.achievements .bar:hover {
+  transform: translateY(-10px);
+}
+
+.achievements .info {
+  padding: 20px;
+}
+
+.achievements .info img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.achievements .info span {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #444;
+  font-size: 1.1rem;
+}
+@media (max-width: 992px) {
+  .achievements .imgs {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .achievements .bar {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .achievements .bar {
+    width: 90%;
+  }
+
+  .achievements .heading {
+    font-size: 2rem;
+  }
+
+  .achievements .info img {
+    height: 160px;
+  }
+
+  .achievements .info span {
+    font-size: 1rem;
+  }
 }
